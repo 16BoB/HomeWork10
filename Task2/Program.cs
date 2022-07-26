@@ -28,6 +28,22 @@ string[] СoncatenationArr (string[] arrOne, string[] arrTwo) {
     string[] newArr = new string[lengArr];
     for (int i = 0; i < lengArr; i++)
     {
-        newArr[i] = arrOne[i] + arrTwo[i]
+        newArr[i] = arrOne[i] + arrTwo[i];
     }
+    return newArr;
 }
+
+Console.Write("Введите количество слов для двух массивов: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+string[] userArrFirst = CreateStringArr(n);
+
+string[] userArrSecond = CreateStringArr(n);
+
+PrintArr(userArrFirst);
+
+PrintArr(userArrSecond);
+
+string[] concatArr = СoncatenationArr(userArrFirst, userArrSecond);
+
+PrintArr(concatArr);
