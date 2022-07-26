@@ -6,7 +6,7 @@ string[] CreateStringArr(int n)
     string[] arr = new string[n];
     for (int i = 0; i < n; i++)
     {
-        Console.Write("Введите элемент массива строк номер: " + (i + 1) + " ");
+        Console.Write("Enter the string array element number: " + (i + 1) + " ");
         string? newElem = Convert.ToString(Console.ReadLine());
         arr[i] = newElem;
     }
@@ -33,7 +33,7 @@ string[] СoncatenationArr (string[] arrOne, string[] arrTwo) {
     return newArr;
 }
 
-Console.Write("Введите количество слов для двух массивов: ");
+Console.Write("Enter the number of words for the two arrays: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 string[] userArrFirst = CreateStringArr(n);
