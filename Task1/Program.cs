@@ -6,8 +6,8 @@ string[] CreateStringArr(int n)
     string[] arr = new string[n];
     for (int i = 0; i < n; i++)
     {
-        Console.Write("Введите элемент массива строк номер: " + (i + 1) + " ");
-        string newElem = Convert.ToString(Console.ReadLine());
+        Console.Write("Enter the string array element number: " + (i + 1) + " ");
+        string? newElem = Convert.ToString(Console.ReadLine());
         arr[i] = newElem;
     }
     return arr;
@@ -38,11 +38,11 @@ int CountWords(string[] arr)
     return count;
 }
 
-Console.Write("Введите количество слов: ");
+Console.Write("Enter number of words: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 string[] userArr = CreateStringArr(n);
 
 PrintArr(userArr);
 
-Console.WriteLine("Количество слов на гласную букву: " + CountWords(userArr));
+Console.WriteLine("Number of words per vowel: " + CountWords(userArr));
