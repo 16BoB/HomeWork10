@@ -12,3 +12,13 @@ string[] CreateStringArr(int n)
     }
     return arr;
 }
+
+void PrintArr(string[] arr)
+{
+    int len = arr.Length;
+    for (int i = 0; i < len; i++)
+    {
+        Console.Write(arr[i] + ";");
+    }
+    Console.WriteLine();
+}
