@@ -22,3 +22,12 @@ void PrintArr(string[] arr)
     }
     Console.WriteLine();
 }
+
+string[] СoncatenationArr (string[] arrOne, string[] arrTwo) {
+    int lengArr = arrOne.Length;
+    string[] newArr = new string[lengArr];
+    for (int i = 0; i < lengArr; i++)
+    {
+        newArr[i] = arrOne[i] + arrTwo[i]
+    }
+}
